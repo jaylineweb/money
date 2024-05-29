@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+/*margin값 초기화*/
+body {font-family:CircularSp,spotify-circular,Helvetica,Arial,sans-serif;margin:0;padding:20px;background-color:#f0f0f0;}
+
+.wrapper{}
+.title{text-align:center;}
+
+form {margin-bottom:20px;}
+input[type="date"],[type="text"],[type="number"],select[id="type"]{padding:5px;}
+#entries {margin-top:20px;}
+.entry {display:flex;justify-content:space-between;background-color:#fff;margin-bottom:10px;padding:10px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
+
+@media screen and (max-width:767px){
+    html,body{height:100vh;background-color:#fff;font-size:16px;}
+    input[type="date"],[type="text"],[type="number"],select[id="type"]{width:100%;padding: 10px 5px;font-size:16px;}
+    input:not(:first-child),select[id="type"]{margin-top:5px;}
+    [type="submit"]{margin-top:5px;padding:10px 27px;border:0;border-radius:30px;background-color:#1fdf64;font-size:16px;font-weight:700;}
+    select[id="type"]{width:calc(100% - -14px);}
+}
+

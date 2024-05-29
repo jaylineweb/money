@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>용돈 기입장</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="title">용돈 기입장</h1>
+        <form id="entry-form">
+            <input type="date" id="date" required>
+            <input type="text" id="description" placeholder="항목명" required>
+            <input type="number" id="amount" placeholder="금액" required>
+            <select id="type">
+                <option value="income">수입</option>
+                <option value="expense">지출</option>
+            </select>
+            <button type="submit">추가</button>
+        </form>
+        <div id="entries">
+            <!-- 항목 리스트가 표시될 영역 -->
+        </div>
+        <div id="total">
+            <p>총 수입: <span id="total-income">0</span></p>
+            <p>총 지출: <span id="total-expense">0</span></p>
+        </div>
+    </div>
+    <!-- <script src="./js/jquery-3.7.1.min"></script> -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
