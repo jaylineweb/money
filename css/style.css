@@ -6,7 +6,7 @@ body {font-family:CircularSp,spotify-circular,Helvetica,Arial,sans-serif;margin:
 .wrapper{}
 .title{text-align:center;}
 
-form {margin-bottom:20px;}
+form {margin-bottom:20px;text-align:center;}
 input[type="date"],[type="text"],[type="number"],select[id="type"]{padding:5px;}
 #entries {margin-top:20px;}
 .entry {display:flex;justify-content:space-between;background-color:#fff;margin-bottom:10px;padding:10px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
