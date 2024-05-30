@@ -3,7 +3,7 @@
 /*margin값 초기화*/
 body {font-family:CircularSp,spotify-circular,Helvetica,Arial,sans-serif;margin:0;padding:20px;background-color:#f0f0f0;}
 
-.wrapper{}
+.wrapper{max-width:1170px;margin-right:auto;margin-left:auto;}
 .title{text-align:center;}
 
 form {margin-bottom:20px;text-align:center;}
@@ -12,6 +12,9 @@ input[type="date"],[type="text"],[type="number"],select[id="type"]{padding:6px 1
 .entry {display:flex;justify-content:space-between;background-color:#fff;margin-bottom:10px;padding:10px;border-radius:5px;box-shadow:0 2px 4px rgba(0,0,0,0.1);}
 .add_btn{padding:6px 12px;}
 
+@media screen and (max-width:1170px){
+    .wrapper{width:100%;}
+}
 @media screen and (max-width:767px){
     html,body{height:100vh;background-color:#fff;font-size:16px;}
     input[type="date"],[type="text"],[type="number"],select[id="type"]{width:100%;padding: 10px 5px;font-size:16px;}
